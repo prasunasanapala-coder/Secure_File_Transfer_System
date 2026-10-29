@@ -1,0 +1,24 @@
+
+# Eclipse workspace files
+.metadata/
+.settings/
+.factorypath
+
+# Compiled output
+build/
+target/
+bin/
+*.class
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+application-local.properties
+
+# Logs and backups
+*.log
+*.bak
+
+# Uploaded user files
+SecureFileStorage/

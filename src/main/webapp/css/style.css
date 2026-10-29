@@ -1,0 +1,155 @@
+
+/* Secure File Sharing System — Dark Cybersecurity Theme */
+
+:root {
+    --bg: #0b1120;
+    --panel: #111c2f;
+    --panel-light: #18263b;
+    --cyan: #22d3ee;
+    --green: #22c55e;
+    --text: #e5edf7;
+    --muted: #94a3b8;
+    --border: #29384d;
+    --danger: #f87171;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+a {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a5f3fc;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 28px;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--text);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.form-control,
+.form-select {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    padding: 11px !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--cyan) !important;
+    box-shadow: 0 0 0 3px #22d3ee22 !important;
+}
+
+.btn-cyber {
+    background: var(--cyan);
+    color: #07111e;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: 600;
+}
+
+.btn-cyber:hover {
+    background: #a5f3fc;
+    color: #07111e;
+}
+
+.btn-success-cyber {
+    background: var(--green);
+    color: #07111e;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: 600;
+}
+
+.btn-outline-cyber {
+    background: transparent;
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+    border-radius: 8px;
+    padding: 9px 15px;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--text);
+    --bs-table-border-color: var(--border);
+    vertical-align: middle;
+}
+
+.badge-cyber {
+    background: #22d3ee20;
+    color: var(--cyan);
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+/* Dashboard text visibility fixes */
+.welcome-card h1,
+.welcome-card h2,
+.welcome-card h3,
+.welcome-card p,
+.welcome-card span {
+    color: #f8fafc;
+}
+
+.welcome-card .eyebrow {
+    color: #22d3ee;
+}
+
+.dashboard-card h2,
+.dashboard-card h3,
+.dashboard-card h4,
+.dashboard-card p,
+.dashboard-card span {
+    color: #f8fafc;
+}
+
+.dashboard-card a {
+    color: #38bdf8;
+}
+
+.dashboard-card a:hover {
+    color: #7dd3fc;
+}
+
+.dashboard-card .badge {
+    color: #22d3ee;
+    background-color: #123047;
+    border: 1px solid #155e75;
+}
