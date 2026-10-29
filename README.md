@@ -38,3 +38,21 @@ The goal of this project is to develop a web-based file transfer platform that s
 ## 👩‍💻 Author
 
 Developed as a learning project to explore Java web application development, database connectivity, authentication, and secure file management.
+
+
+## 📸 Application Screenshots
+
+### 🔐 Login Page
+![Login Page](/SecureFileTransferSystem/screenshots/login.png)
+
+### 📊 User Dashboard
+![User Dashboard](/SecureFileTransferSystem/screenshots/dashboard.png)
+
+### 📤 File Upload
+![File Upload](/SecureFileTransferSystem/screenshots/file-upload.png)
+
+### 🤝 File Sharing
+![File Sharing](/SecureFileTransferSystem/screenshots/file-sharing.png)
+
+### 👨‍💻 Admin Panel
+![Admin Panel](/SecureFileTransferSystem/screenshots/admin-panel.png)
