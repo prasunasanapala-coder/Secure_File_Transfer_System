@@ -1,42 +1,40 @@
+# 🔐 Secure File Transfer System
 
-# Secure File Transfer System
+A Java-based web application designed to provide secure file storage, transfer, and sharing between users. Built using **Java, JSP, Servlets, JDBC, MySQL, and Apache Tomcat**, the system includes authentication, role-based access control, and administrative user management.
 
-A Java web application for managing, uploading, downloading, and sharing files with authenticated users.
+## ✨ Features
 
-## Features
-- User registration, login, and logout
-- Password hashing with BCrypt
-- File upload and download
-- File sharing with VIEW and DOWNLOAD permissions
-- User dashboard and file management
-- Admin user management
-- Account deactivation and reactivation
-- MySQL database integration
+- 🔑 **User Authentication** — User registration and login with password hashing.
+- 📤 **File Upload** — Upload and store files securely outside the web application directory.
+- 📥 **File Download** — Access and download authorized files.
+- 🤝 **File Sharing** — Share files with other registered users.
+- 🛡️ **Role-Based Access Control** — Support for Admin, Manager, and User roles.
+- 👨‍💻 **Admin Dashboard** — Manage user accounts, including activation and deactivation.
+- 🗄️ **Database Integration** — Store user, file, and sharing information in MySQL.
+- 📋 **Activity Tracking** — Database support for recording user and file activities.
 
-## Technology Stack
-- Java
-- Jakarta Servlets and JSP
-- JDBC
-- MySQL 8
+## 🛠️ Technologies Used
+
+- **Backend:** Java, Jakarta Servlets, JSP
+- **Database:** MySQL
+- **Database Connectivity:** JDBC
+- **Server:** Apache Tomcat 11
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap
+- **IDE:** Eclipse IDE
+- **Security:** BCrypt password hashing and role-based authorization
+
+## ⚙️ Setup Requirements
+
+- Java JDK
+- Eclipse IDE with Enterprise Java and Web Development support
 - Apache Tomcat 11
-- HTML, CSS, Bootstrap
+- MySQL Server and MySQL Workbench
+- MySQL Connector/J
 
-## Project Structure
-- `src/main/java/com/sft/controller` — Servlets
-- `src/main/java/com/sft/dao` — Database access
-- `src/main/java/com/sft/filter` — Authentication filter
-- `src/main/java/com/sft/model` — Model classes
-- `src/main/java/com/sft/util` — Utility classes
-- `src/main/webapp` — JSP pages and CSS
+## 🚀 Project Goal
 
-## Setup
-1. Install JDK, Eclipse Enterprise Edition, MySQL, and Tomcat 11.
-2. Create the `SecureFileDB` database and required tables.
-3. Configure database credentials outside the published source code.
-4. Configure the local file-storage directory.
-5. Add the MySQL JDBC driver to the project.
-6. Configure Tomcat in Eclipse and run the web application.
+The goal of this project is to develop a web-based file transfer platform that supports controlled file sharing, secure authentication, and user management while applying Java web development and database security concepts.
 
-## Security Notes
-Do not commit passwords, private configuration, or uploaded user files.
-Verify that shared-file permissions are checked on the server for every request.
+## 👩‍💻 Author
+
+Developed as a learning project to explore Java web application development, database connectivity, authentication, and secure file management.
