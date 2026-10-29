@@ -190,7 +190,7 @@
             </div>
         <% } %>
 
-        <form action="login" method="post">
+        <form action="${pageContext.request.contextPath}/login" method="post">
 
             <label class="field-label" for="username">
                 Username

@@ -28,4 +28,31 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>screenshots/admin-panel.png</name>
+			<type>1</type>
+			<location>C:/Users/Prasuna Sanapala/OneDrive/Pictures/SecureFileTransfer/admin-panel.png</location>
+		</link>
+		<link>
+			<name>screenshots/dashboard.png</name>
+			<type>1</type>
+			<location>C:/Users/Prasuna Sanapala/OneDrive/Pictures/SecureFileTransfer/dashboard.png</location>
+		</link>
+		<link>
+			<name>screenshots/file-sharing.png</name>
+			<type>1</type>
+			<location>C:/Users/Prasuna Sanapala/OneDrive/Pictures/SecureFileTransfer/file-sharing.png</location>
+		</link>
+		<link>
+			<name>screenshots/file-upload.png</name>
+			<type>1</type>
+			<location>C:/Users/Prasuna Sanapala/OneDrive/Pictures/SecureFileTransfer/file-upload.png</location>
+		</link>
+		<link>
+			<name>screenshots/login.png</name>
+			<type>1</type>
+			<location>C:/Users/Prasuna Sanapala/OneDrive/Pictures/SecureFileTransfer/login.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>
