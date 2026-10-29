@@ -43,16 +43,16 @@ Developed as a learning project to explore Java web application development, dat
 ## 📸 Application Screenshots
 
 ### 🔐 Login Page
-![Login Page](/SecureFileTransferSystem/screenshots/login.png)
+![Login Page](./screenshots/login.png)
 
 ### 📊 User Dashboard
-![User Dashboard](/SecureFileTransferSystem/screenshots/dashboard.png)
+![User Dashboard](./screenshots/dashboard.png)
 
 ### 📤 File Upload
-![File Upload](/SecureFileTransferSystem/screenshots/file-upload.png)
+![File Upload](./screenshots/file-upload.png)
 
 ### 🤝 File Sharing
-![File Sharing](/SecureFileTransferSystem/screenshots/file-sharing.png)
+![File Sharing](./screenshots/file-sharing.png)
 
 ### 👨‍💻 Admin Panel
-![Admin Panel](/SecureFileTransferSystem/screenshots/admin-panel.png)
+![Admin Panel](./screenshots/admin-panel.png)
