@@ -274,7 +274,7 @@
             <h2>No shared files yet</h2>
             <p>When another user shares a file with you, it will appear here.</p>
 
-            <a href="dashboard.jsp" class="btn btn-cyber mt-2">
+            <a href="${pageContext.request.contextPath}/dashboard.jsp" class="btn btn-cyber mt-2">
                 Return to Dashboard
             </a>
         </div>
@@ -295,9 +295,11 @@
 
             Object fileId = file.get("id");
 
-            boolean canView =
+            boolean validPermission =
                 "VIEW".equals(permission) ||
                 "DOWNLOAD".equals(permission);
+            
+            boolean canView = validPermission; 
 
             boolean canDownload = "DOWNLOAD".equals(permission);
 
@@ -322,14 +324,16 @@
 
                     <% if (validId && canView) { %>
                         <a class="action-btn view-btn"
-                           href="view-shared?id=<%= ((Number) fileId).intValue() %>">
+                           href="${pageContext.request.contextPath}/view-shared?id=<%= ((Number) fileId).intValue() %>"
+                           target="_blank"
+                           rel="noopener noreferrer">
                             👁 View
                         </a>
                     <% } %>
 
                     <% if (validId && canDownload) { %>
                         <a class="action-btn download-btn"
-                           href="download?id=<%= ((Number) fileId).intValue() %>">
+                           href="${pageContext.request.contextPath}/download?id=<%= ((Number) fileId).intValue() %>">
                             ⬇ Download
                         </a>
                     <% } %>
@@ -345,8 +349,8 @@
     <% } %>
 
     <footer class="footer-links">
-        <a href="files">← My Files</a>
-        <a href="dashboard.jsp">Dashboard</a>
+        <a href="${pageContext.request.contextPath}/files">← My Files</a>
+        <a href="${pageContext.request.contextPath}/dashboard.jsp">Dashboard</a>
     </footer>
 
 </div>

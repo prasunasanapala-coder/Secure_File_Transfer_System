@@ -271,11 +271,11 @@
         </div>
 
         <div class="d-flex flex-wrap gap-2">
-            <a href="upload" class="btn btn-cyber">
+            <a href="${pageContext.request.contextPath}/upload" class="btn btn-cyber">
                 ＋ Upload File
             </a>
 
-            <a href="shared-files" class="btn btn-outline-cyber">
+            <a href="${pageContext.request.contextPath}/shared-files" class="btn btn-outline-cyber">
                 🔗 Shared With Me
             </a>
         </div>
@@ -317,7 +317,7 @@
                 <h4>No files yet</h4>
                 <p>Upload your first file to get started.</p>
 
-                <a href="upload" class="btn btn-cyber mt-2">
+                <a href="${pageContext.request.contextPath}/upload" class="btn btn-cyber mt-2">
                     ⬆ Upload Your First File
                 </a>
             </div>
@@ -358,33 +358,47 @@
                         <td>
                             <div class="action-group">
 
+                                <!-- View File -->
                                 <a class="action-btn btn-download"
-                                   href="download?id=<%= file.getId() %>">
-                                    ⬇ Download
+                                   href="${pageContext.request.contextPath}/view?id=<%= file.getId() %>"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                   👁 View
                                 </a>
 
-                                <a class="action-btn btn-share"
-                                   href="share?fileId=<%= file.getId() %>">
-                                    🔗 Share
-                                </a>
+                               <!-- Download File -->
+                               <a class="action-btn btn-download"
+                                  href="${pageContext.request.contextPath}/download?id=<%= file.getId() %>">
+                                  ⬇ Download
+                               </a>
 
-                                <% if ("ADMIN".equals(user.getRole())
-                                    || file.getUploadedBy() == user.getId()) { %>
+                               <!-- Share File -->
+                               <a class="action-btn btn-share"
+                                  href="${pageContext.request.contextPath}/share?fileId=<%= file.getId() %>">
+                                  🔗 Share
+                               </a>
 
-                                    <form action="${pageContext.request.contextPath}/delete"
-                                          method="post"
-                                          onsubmit="return confirm('Are you sure you want to delete this file?');">
+                               <!-- Delete File: Owner or Admin only -->
+                               <% if ("ADMIN".equals(user.getRole())
+                                     || file.getUploadedBy() == user.getId()) { %>
 
-                                       <input type="hidden" name="id" value="<%= file.getId() %>">
+                                  <form action="${pageContext.request.contextPath}/delete"
+                                        method="post"
+                                        onsubmit="return confirm('Are you sure you want to delete this file?');">
 
-                                       <button type="submit" class="btn btn-danger">
-                                           Delete
-                                       </button>
-                                    </form>
+                                    <input type="hidden"
+                                           name="id"
+                                           value="<%= file.getId() %>">
 
-                                <% } %>
+                                    <button type="submit" class="action-btn btn-delete">
+                                       🗑 Delete
+                                    </button>
 
-                            </div>
+                                </form>
+
+                         <% } %>
+
+                      </div>
                         </td>
                     </tr>
 
@@ -398,9 +412,9 @@
 
     <!-- Footer navigation -->
     <footer class="footer-links">
-        <a href="dashboard.jsp">← Dashboard</a>
-        <a href="upload">＋ Upload File</a>
-        <a href="shared-files">🔗 Shared With Me</a>
+        <a href="${pageContext.request.contextPath}/dashboard.jsp">← Dashboard</a>
+        <a href="${pageContext.request.contextPath}/upload">＋ Upload File</a>
+        <a href="${pageContext.request.contextPath}/shared-files">🔗 Shared With Me</a>
     </footer>
 
 </div>
